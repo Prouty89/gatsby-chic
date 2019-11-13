@@ -4,73 +4,9 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Carousel from "../components/carousel";
 
-import styled from "styled-components";
+import {HeroPages} from "../styles/hero";
 
-const HeroPages = styled.div`
 
-.hero1{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  height: 902px;
-}
-
-.carousel{
-  display:flex;
-  height: 600px;
-  align-items: center;
-  justify-content: center;
-}
-
-.mantra{
-  display: flex; 
-  align-items: center;
-  justify-content: center;
-  height: 50px;
-  margin-bottom: 0px;
-}
-
-.quote-container{
-  height: 250px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.hero-2{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  height: 902px;
-}
-
-.images{
-  height: 600px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 90%;
-
-  .image{
-    background: black;
-    color: white;
-    width: 400px;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
-.hero-breaktwo{
-  display:flex;
-  justify-content: space-around;
-  width: 90%;
-}
-`
 
 const IndexPage = () => (
   <Layout>
@@ -80,7 +16,7 @@ const IndexPage = () => (
       <div className="carousel">Carousel</div>
       <div className="hero-breakone">
         <h1 className="mantra">The Chic Approach</h1>
-        <div className="quote-container">Inspirational Quote</div>
+        <div className="quote-container">Client Quote</div>
       </div>
     </div>
     <div className="hero-2">

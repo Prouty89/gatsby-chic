@@ -3,15 +3,19 @@ import PropTypes from "prop-types";
 import React from "react";
 import styled from 'styled-components';
 
+// import MenuListComposition from "../components/dropdown";
+
+
 const StyledHeader = styled.div`
 
-@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:300&display=swap');
 font-family: 'Lato', sans-serif;
+font-weight: 100;
 display: flex;
 justify-content: center;
 align-items: center;
-background: #8DAA9D;
-height: 60px;
+background: black;
+height: 30px;
 
 @media(max-width:750px){
   height: 160px;
@@ -69,10 +73,11 @@ const Header = ({ siteTitle }) => (
         </Link>
       </div>
       <div className="menu-bar">
-        <a target="_blank" href="https://mydomastudio.com/login/" className = "header-link">Login</a>
+        <a target="_blank" href="https://ourchichome.mydomastudio.com/" rel = "noopener" className = "header-link">Login</a>
         <Link className = "header-link" to="/page-4/">Contact</Link>
-        <Link className = "header-link" to="/page-2/">Portfolio</Link>
-        <Link className = "header-link" to="/page-3/">Meet the Chicoines</Link>
+        {/* <MenuListComposition /> */}
+        <Link className = "header-link" to="/page-2/">Our Work</Link>
+        <Link className = "header-link" to="/meet/">Meet the Chicoines</Link>
       </div>
     </div>
   </StyledHeader>
