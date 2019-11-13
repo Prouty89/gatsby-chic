@@ -7,10 +7,11 @@ const StyledFooter = styled.div`
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 font-family: 'Lato', sans-serif;
 display: flex;
+color: white;
 justify-content: center;
 align-items: center;
-background: #8DAA9D;
-height: 60px;
+background: black;
+height: 120px;
 position: relative;
 bottom: 0;
 width: 100%;
