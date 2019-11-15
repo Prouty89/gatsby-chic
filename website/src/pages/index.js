@@ -3,6 +3,7 @@ import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Carousel from "../components/carousel";
+import LogoWhite from "../assets/svg/logoWhite.inline.svg";
 
 import {HeroPages} from "../styles/hero";
 
@@ -12,6 +13,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <HeroPages>
+    <LogoWhite className = "logo-black" />
     <div className="hero-1">
       <div className="carousel">Carousel</div>
       <div className="hero-breakone">

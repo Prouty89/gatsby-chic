@@ -1,14 +1,21 @@
+@font-face {
+  font-family: 'Radiata';
+  src: local('Radiata'), url(../assets/fonts/Radiata-Thin.woff) format('woff');
+}
+
 html {
-  font-family: sans-serif;
+  font-family: "Radiata";
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   height: 100vh;
 }
 body {
   margin: 0;
+  font-family: 'Radiata';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 article,
 aside,
 details,
@@ -203,8 +210,7 @@ html {
 }
 body {
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
-  font-weight: normal;
+  font-weight: bold;
   word-wrap: break-word;
   font-kerning: normal;
   -moz-font-feature-settings: "kern", "liga", "clig", "calt";

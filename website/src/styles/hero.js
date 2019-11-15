@@ -1,11 +1,22 @@
 import styled from 'styled-components';
 
 
+
 {/*HOMEPAGE*/}
 {/*MEET*/}
 export const HeroPages = styled.div`
 
+h1{
+  font-family: Radiata;
+}
+
+h3{
+  font-family: Radiata;
+}
+
+
 .hero1{
+  font-family: Radiata;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,6 +39,13 @@ export const HeroPages = styled.div`
   align-items: center;
 }
 
+.logo-black{
+  width: 250px;
+  display: block;
+  margin: auto;
+}
+
+
 .mantra{
   display: flex; 
   align-items: center;
@@ -38,7 +56,7 @@ export const HeroPages = styled.div`
 .logo{
   display: flex;
   border: 1px solid black;
-  width: 300px; 
+  width: 600px;
   align-items: center;
   justify-content: center;
   height: 50px;
@@ -54,6 +72,7 @@ export const HeroPages = styled.div`
 
 .hero-2{
   display: flex;
+  font-family: Radiata;
   flex-direction: column;
   align-items: center;
   align-content: center;

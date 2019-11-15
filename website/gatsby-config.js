@@ -6,22 +6,14 @@ module.exports = {
   },
   plugins: [
       {
-        resolve: `gatsby-plugin-material-ui`,
+        resolve: "gatsby-plugin-react-svg",
         options: {
-          stylesProvider: {
-            injectFirst: true,
+          rule: {
+            include: /\.inline\.svg$/
           },
         },
       },
     `gatsby-plugin-react-helmet`, `gatsby-plugin-styled-components`,
-    // {
-    //   resolve: `gatsby-source-contentful`,
-    //   options: {
-    //     spaceId: `tl66voqgnk19`,
-    //     // Learn about environment variables: https://gatsby.dev/env-vars
-    //     accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-    //   },
-    // },  
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -48,3 +40,22 @@ module.exports = {
     // `gatsby-plugin-offline`,
   ],
 }
+
+
+// {
+      //   resolve: `gatsby-plugin-material-ui`,
+      //   options: {
+      //     stylesProvider: {
+      //       injectFirst: true,
+      //     },
+      //   },
+      // },
+
+      // {
+    //   resolve: `gatsby-source-contentful`,
+    //   options: {
+    //     spaceId: `tl66voqgnk19`,
+    //     // Learn about environment variables: https://gatsby.dev/env-vars
+    //     accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+    //   },
+    // },  
