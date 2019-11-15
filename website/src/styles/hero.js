@@ -14,6 +14,12 @@ h3{
   font-family: Radiata;
 }
 
+.gatsby-image-wrapper{
+  width: 500px;
+  display: block;
+  margin: 0 auto;
+}
+
 
 .hero1{
   font-family: Radiata;

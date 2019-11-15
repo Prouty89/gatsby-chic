@@ -1,7 +1,7 @@
 import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import React from "react";
-import styled from 'styled-components';
+import styled, {keyframes} from 'styled-components';
 
 // import MenuListComposition from "../components/dropdown";
 
@@ -12,6 +12,7 @@ const Header = ({ siteTitle }) => (
       <div classname = "header-title">
         <Link className = "header-link-title" to="/">
           {siteTitle}
+          <div className="focus"></div>
         </Link>
       </div>
       <div className="menu-bar">
@@ -34,7 +35,18 @@ Header.defaultProps = {
   siteTitle: ``,
 }
 
-export default Header
+export default Header;
+
+export const animateIn = keyframes`
+  0%{
+    width: 10px;
+    left: 0%;
+  }
+  100% {
+    width: 186px;
+    left: 15%;
+  }
+`;
 
 const StyledHeader = styled.div`
 
@@ -55,24 +67,43 @@ box-shadow: 0 4px 12px 1px grey;
     color: white;
     text-decoration: none;
 
+    
     @media(max-width:750px){
       border-bottom: 2px solid white;
     }
   }
 
+  .header-container{
+    margin-top: 2px;
+  }
+
   .header-link-title{
     color: white;
     text-decoration: none;
-    text-shadow:5px 5px 10px #00FF00;
-
-    @media(max-width:750px){
-      visibility: hidden;
+    
+    &:hover { 
+      color: gold;
+      animation: ${animateIn} 300ms ease-in-out;
+      transition: .4s;  
+      .focus{
+          background: gold; 
+          height: 1px;
+          animation: ${animateIn} 300ms ease-in-out;         
+          animation-fill-mode: forwards; 
+          transition: .8s;
+      }  
     }
+
+      @media(max-width:750px){
+        visibility: hidden;
+      }
+  
+
   }
 
   .menu-bar{
     display: flex;
-    width: 400px;
+    width: 500px;
     justify-content: space-between;
 
     @media(max-width:750px){

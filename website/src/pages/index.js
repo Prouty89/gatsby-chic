@@ -4,6 +4,7 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Carousel from "../components/carousel";
 import LogoWhite from "../assets/svg/logoWhite.inline.svg";
+import Image from "../components/image"
 
 import {HeroPages} from "../styles/hero";
 
@@ -15,6 +16,7 @@ const IndexPage = () => (
     <HeroPages>
     <LogoWhite className = "logo-black" />
     <div className="hero-1">
+      <Image className="image" />
       <div className="carousel">Carousel</div>
       <div className="hero-breakone">
         <h1 className="mantra">The Chic Approach</h1>
