@@ -57,7 +57,7 @@ justify-content: center;
 align-items: center;
 background: black;
 height: 30px;
-box-shadow: 0 4px 12px 1px grey;
+box-shadow: 0 4px 12px 1px black;
 
 @media(max-width:750px){
   height: 160px;

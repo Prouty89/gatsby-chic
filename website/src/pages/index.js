@@ -16,7 +16,6 @@ const IndexPage = () => (
     <HeroPages>
     <LogoWhite className = "logo-black" />
     <div className="hero-1">
-      <Image className="image" />
       <div className="carousel">Carousel</div>
       <div className="hero-breakone">
         <h1 className="mantra">The Chic Approach</h1>
