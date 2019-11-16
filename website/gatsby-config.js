@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `CHICOINE INTERIORS`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `Chicoine Interiors`,
+    description: `Linsay Chicoine 2020`,
     author: `@gatsbyjs`,
   },
   plugins: [
@@ -14,6 +14,21 @@ module.exports = {
         },
       },
     `gatsby-plugin-react-helmet`, `gatsby-plugin-styled-components`,
+    {
+      resolve: 'gatsby-plugin-mdx',
+      options: {
+        extensions: ['.mdx', '.md'],
+        gatsbyRemarkPlugins: [
+          {
+            resolve: 'gatsby-remark-external-links',
+            options: {
+              target: '_blank',
+              rel: 'nofollow noopener noreferrer',
+            },
+          },
+        ],
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
