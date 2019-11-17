@@ -1,9 +1,6 @@
 import styled from 'styled-components';
 
 
-
-{/*HOMEPAGE*/}
-{/*MEET*/}
 export const HeroPages = styled.div`
 
 h1{

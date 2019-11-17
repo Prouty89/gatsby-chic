@@ -16,10 +16,10 @@ const Header = ({ siteTitle }) => (
         </Link>
       </div>
       <div className="menu-bar">
-        <a target="_blank" href="https://ourchichome.mydomastudio.com/" rel = "noopener" className = "header-link">Login</a>
+        <a target="_blank" href="https://ourchichome.mydomastudio.com/" rel="noopener noreferrer" className = "header-link">Login</a>
         <Link className = "header-link" to="/page-4/">Contact</Link>
         {/* <MenuListComposition /> */}
-        <Link className = "header-link" to="/page-2/">Our Work</Link>
+        <Link className = "header-link" to="/">Our Work</Link>
         <Link className = "header-link" to="/meet/">Meet the Chicoines</Link>
       </div>
     </div>
